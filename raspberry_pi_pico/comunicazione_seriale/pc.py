@@ -10,7 +10,8 @@ while run:
     ch = pico.read().decode() 
     if ch != "\n" and ch != "\r":
         if ch == ";":
-            if s == "ok":
-                run = False
+            run = False
         else:
             s += ch
+            
+print(s)
